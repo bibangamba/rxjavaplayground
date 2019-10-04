@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'com.bibangamba.levelup'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+//    compile 'io.reactivex.rxjava2:rxjava:2.2.0'
+    implementation "io.reactivex.rxjava3:rxjava:3.0.0-RC3"
+    implementation "com.netflix.rxjava:rxjava-core:0.16.1"
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+}
